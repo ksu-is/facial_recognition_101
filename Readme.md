@@ -6,6 +6,7 @@ The goal of this repository is take the reader through a jupyter notebook which 
 
 See the jupyter notebook for the actual presentation of this material
 
+My goal is to have this code setup so that others may use it with simple setup for themselves if possible. The only setup required would be the actual picture taking portion to get your camera to identify your face for unlocking your machine. This would work like your iphone facial recognition. This code will make it to where only your face will be able to unlock your machine as a type of security measure.
 
 ## Setup
 
