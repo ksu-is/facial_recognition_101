@@ -1,0 +1,27 @@
+This file contains the code I will be using for the final outcome of the project. It is currently unfinished but i will be adding more and more with each day.
+
+Firstly, you must open the command prompt on your machine/work station in order to download the priliminaries for this project.
+"pip install opencv-python deepface" will be the prompt you want to enter in the terminal. Opencv will be used to access and process the camera frames while deepface will be the learning model working behind the scenes to learn the your face.
+
+First, We are going to want to import the core python module threading. Next, we will import cv2 from deepface.
+
+import threading
+
+import cv2
+from deepface import DeepFace
+
+After this, we want to be able to set the properties on the camera. This will include things like the height and width. With this step, we also want to have the correct camera selected.
+
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+
+The reason I put "0" for the camera selection is because I only have one camera so there is no further specification for which camera I want to use. Therefore, by putting "VideoCapture(0)" it will select the only camera by default.
+Cv2.CAP_DSHOW will specify the video soruce which will be in Windows in this case.
+Next, we will be placing the properties.
+
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
+
+
+
+
